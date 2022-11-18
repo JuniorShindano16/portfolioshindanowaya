@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #707070;
+    display: inline;
+}
+.main{
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+header .profil{
+    display: flex;
+    margin-bottom: 20px;
+}
+.details h1{
+    margin-bottom: 5px;
+    size: 4.5em;
+}
+
+.details .mailpost{
+    display: flex;
+    text-align: center;
+}
+
+.details .mailpost p {
+    margin-right: 20px;;
+}
+.details .mailpost span{
+    background-color: rgb(0, 149, 255);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+header .profil img{
+
+    margin-right: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    box-shadow: 5px 5px 5px 5px;
+}
+.bio{
+    margin-bottom: 10px;
+}
+
+.bio p {
+    margin-bottom: 20px;
+}
+
+.bio .contact {
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+section h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section .talent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;   
+}
+
+
+section .talent-items {
+    border: 1px solid #707070;
+    border-radius: 7px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    width: 49%;
+    margin-bottom: 10px;
+}
+
+section .talent-items span {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+section .talent-items:hover,
+.langue-nom:hover{
+    background-color: rgb(13, 163, 212);
+    color: #fff;
+    border: none;
+}
+ .langues{
+    display: flex;
+    margin-top: 10px;
+ }
+
+ .langue-nom {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid #707070;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left:15px;
+ }
+
+ .langue-nom  img {
+    width: 40px;
+    height: 28px;
+    margin-right: 5px;
+ }
+
+ .experience{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+ }
+
+ .experience-item{
+    width: 20%;
+    padding-left: 10px;
+ }
+ .point-temps{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+ }
+
+ .point-temps .circle{
+    display: block;
+    background-color: #707070;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+   
+ }
+ .point-temps .ligne {
+    width: 100%;
+    margin-left: 7px;
+    border: none;
+    height: 2px;
+    background-color: #707070;
+ }
+
+ .experience-item .point-temps:hover{
+    color: rgb(7, 189, 199);
+ }
+
+ .formulaire {
+    margin-top: 20px;
+ }
+ .formulaire .noms {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+ }
+
+ .formulaire .noms input{
+    width: 48%;
+    height: 35px;
+    border-radius: 8px;
+ }
+
+ .mailexped{
+    margin-bottom: 10px;
+ }
+.mailexped input{
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+}
+
+.comboradio{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.comboradio select{
+    width: 50%;
+    height: 35px;
+    border-radius: 8px;
+    color: #707070;
+    margin-right: 15px;
+}
+
+form div textarea{
+    width: 100%;
+    border-radius: 10px;
+    color: #707070;
+}
+ .boutonenvoie{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+ }
+ .boutonenvoie p{
+    color: red;
+ }
+ .boutonenvoie span{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgb(13, 163, 212);
+    border-radius: 5px;
+    width: 70px;
+    height: 40px;
+    color: #fff;
+ }
+
+ footer{
+    margin-top: 25px;
+    justify-content: center;
+ }
+
+ @media screen and  (max-width :800px) {
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.profil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.profil .details{
+    display: flex;
+    flex-direction: column;
+}
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.bio p {
+    margin: 5%;
+    padding: 5px;
+}
+.bio .contact{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.bio .contact a {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+section h2,
+section p{
+    margin-left: 5%;
+}
+.talent {
+    width: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   flex-wrap: wrap;
+}
+.talent .talent-items{
+    width: 95%;
+}
+form {
+    margin-left: 5%;
+}
+.langues{
+    margin-right: 5%;
+}
+ }
